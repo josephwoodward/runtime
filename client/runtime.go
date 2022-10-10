@@ -293,6 +293,14 @@ func NewWithClient(host, basePath string, schemes []string, client *http.Client)
 	return rt
 }
 
+// WithTracing adds OpenTelemetry support to the provided runtime.
+// A new client span is created for each request.
+// If the context of the client operation does not contain an active span, no span is created.
+// The provided opts are applied to each spans - for example to add global tags.
+func (r *Runtime) WithTracing(opts ...opentracing.StartSpanOption) runtime.ClientTransport {
+	return newOpenTelemetryTransport(r, r.Host, opts)
+}
+
 // WithOpenTracing adds opentracing support to the provided runtime.
 // A new client span is created for each request.
 // If the context of the client operation does not contain an active span, no span is created.

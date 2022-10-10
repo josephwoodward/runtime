@@ -11,11 +11,13 @@ require (
 	github.com/go-openapi/swag v0.21.1
 	github.com/go-openapi/validate v0.21.0
 	github.com/go-stack/stack v1.8.1 // indirect
+	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/opentracing/opentracing-go v1.2.0
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	go.mongodb.org/mongo-driver v1.8.3 // indirect
+	go.opentelemetry.io/otel/trace v1.10.0
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )
