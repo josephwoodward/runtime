@@ -11,7 +11,6 @@ require (
 	github.com/go-openapi/swag v0.21.1
 	github.com/go-openapi/validate v0.21.0
 	github.com/go-stack/stack v1.8.1 // indirect
-	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/opentracing/opentracing-go v1.2.0
